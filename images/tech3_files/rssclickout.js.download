@@ -1,0 +1,51 @@
+// disable clickouts for any links pointing to this domain substring
+var clickoutDomain = "indianexpress.com";
+
+// where to open on click. Set to _blank for new window and to _self for current window
+var clickoutWindow = "_blank";
+
+function findParentNode(e) {
+	var el = e.target || e.srcElement;
+
+	while (el && !(el.nodeName == 'DIV' && /cnitem-item\b/.test(el.className))) {
+		el = el.parentNode;
+	}
+
+	if (el && /cnitem-item\b/.test(el.className)) {
+		return el;
+	}
+	return false;
+}
+
+function cnClickHandler(e) {
+
+	var event = e || window.event;
+
+	var item = findParentNode(e);
+
+	// check if item has a clickout to its own domain and disable overlay
+	if (item) {
+		var url = item.parentNode.getAttribute('data-cnitem-url');
+		if (url.match(new RegExp(clickoutDomain, 'i'))) {
+			window.open(url, clickoutWindow);
+			e.stopPropagation();
+		}
+	}
+	return false;
+}
+
+// attach event handlers to items so we can detect top socialspots clicks
+var cnItems;
+var exists = setInterval(function() {
+
+	// add event listener for the content container so we can add extra
+	// events on clicks
+	cnItems = document.querySelectorAll('div.cnwidget-content');
+	if (cnItems) {
+		
+		for (var i = 0; i < cnItems.length; i++) {
+			cnItems[i].addEventListener('click', cnClickHandler, true);
+		}	
+		clearInterval(exists);
+	}
+}, 100);

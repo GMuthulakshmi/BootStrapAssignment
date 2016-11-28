@@ -1,0 +1,27 @@
+
+var pubId=32987;
+var siteId=69113;
+var kadId=882926;
+var kadwidth=300;
+var kadheight=250;
+var kadtype=1;
+var kadpageurl= "http://indianexpress.com";
+
+document.write("<scr"+"ipt type=\"text/javascript\" src=\"http://ads.pubmatic.com/AdServer/js/showad.js\"></scr"+"ipt>\n");
+
+var adcount_4319265_1_=new Image();
+adcount_4319265_1_.src="http://adnet.affinity.com/adcount/3.0/5359/4319265/0/170/AdId=8829156;BnId=1;ct=3280693904;st=74137;adcid=1;itime=315297069;reqtype=5;;key=key1%2Bkey2%2Bkey3%2Bkey4;kvrefd=indianexpress%2Ecom;kvrit=1480315204029;kvreqseq=1;kvuniqimp=1480315204029;";
+
+var _comscore = _comscore || []; 
+_comscore.push({ c1: "8", c2: "16789691" ,c3: "9999999999" }); 
+(function() { 
+var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+ s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+ el.parentNode.insertBefore(s, el); 
+})(); 
+ document.write('<img src="http://atpixelus.alephd.com/post_adtech?3.XaJoDjWu5k828m0kdO.pKptnPQ8NnVKMbpfMqw2AMNRjTVl9ZFbKD.yfRi9TzYuuFGOmSBEXtW5MsFVbiQydkUt-IwDJYubO2KP1405nFfZFaG8DHiN6zrJOzm4P9cRzdvUlXMSI65gqgZPP3VM5mctOGEFCjnyp99eIrb3jfkyiX5G3LGE.Xowxz6a4-n82uN-TPi-uC5I4Ci8H7wczaSue365IQxHpPre68O2Dts7tpPh72PUxet6e8zUf8-" width="1" height="1"  style="display:none;">');
+document.write('<img src="http://ad.afy11.net/ad?mode=10&sspid=585" width="1" height="1" style="display:none;">');
+document.write('<img src="http://idpix.media6degrees.com/orbserv/hbpix?pixId=15194&pcv=50" width="1" height="1" style="display:none;">');
+document.write('<img src="http://x.bidswitch.net/sync?ssp=aol" width="1" height="1" style="display:none;">');
+document.write('<img src="http://d.chango.com/m/aol" width="1" height="1" style="display:none;">');
+document.write('<iframe src="http://ad.turn.com/server/pixel.htm?fpid=28" width="1" height="1" style="display: none"></iframe>');

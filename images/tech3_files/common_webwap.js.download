@@ -1,0 +1,2 @@
+if(location.href.match('ie_share')){try{self.close();window.close();}
+catch(err){}}

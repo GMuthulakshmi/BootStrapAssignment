@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<!-- Website Title & Description for Search Engine purposes -->
+	<title></title>
+	<meta name="description" content="">
+
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab|Ubuntu" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Custom CSS -->
+	<link href="includes/css/styles.css" rel="stylesheet">
+
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+	
+	<div class="container">
+		
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button><!--end button-->
+				
+				<a class="navbar-brand" href="/"><strong>NEWS LETTER</strong></a>
+
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">News<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">World</a></li>
+								<li><a href="#">National</a></li>
+								<li><a href="#">International</a></li>
+								
+								<li class="divider"></li>
+								<li><a href="#">More News</a></li>
+							</ul>
+						</li><!-- end dropdown-->
+
+
+						<li><a href="technology.html">Technology</a></li>
+		
+						<li><a href="sports.html">Sports</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Entertainment<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://www.desimartini.com/tamil-latest.htm">Movies</a></li>
+								<li><a href="#">Music</a></li>
+								<li><a href="#">Beauty</a></li>
+								<li><a href="#">Shopping</a></li>
+								<li><a href="#">Style</a></li>
+							</ul>
+						</li><!-- end dropdown-->
+
+					</ul><!--end nav navbar-nav -->
+
+					<form class="navbar-form pull-left">
+						<input type="text" class="form-control" placeholder="Enter to search" id="search">
+						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+					</form><!-- end navbar-form -->
+
+				
+				</div><!-- end nav-collapse -->
+
+			</div><!-- end container -->
+		</div><!-- end navbar -->
+
+		<div class="carousel slide" id="myCarousel">
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to=0 data-target=#myCarousel></li>
+				<li  data-slide-to=1 data-target=#myCarousel></li>
+				<li  data-slide-to=2 data-target=#myCarousel></li>
+				<li  data-slide-to=3 data-target=#myCarousel></li>
+
+			</ol><!--end carousel-indicators-->
+
+			<div class="carousel-inner">
+				<div class="item active" id="slide1">
+					<div class="carousel-caption">
+						<h4>US</h4>
+						<p>Clinton Team Backs Stein's Recount Effort in Wisconsin</p>
+					</div><!--end carousel-caption-->
+				</div><!--end item active-->
+
+				<div class="item" id="slide2">
+					<div class="carousel-caption">
+						<h4>EDUCATIONAL INSIGHT</h4>
+						<p>WHERE SHOULD YOU GO FOR YOUR MBA?</p>
+					</div><!--end carousel-caption-->
+				</div><!--end item active-->
+
+
+				<div class="item" id="slide3">
+					<div class="carousel-caption">
+						<h4>BUSINESS</h4>
+						<p>ONLINE SALES SOAR, BRICK-AND-MORTAR STORES SINK OVER HOLIDAYS
+						</p>
+					</div><!--end carousel-caption-->
+				</div><!--end item active-->
+				<div class="item" id="slide4">
+					<div class="carousel-caption">
+						<p>WORLD WAR II CODE-BREAKING SITE BLETCHLEY PARK TO BECOME SCHOOL FOR HACKERS
+
+						</p>
+					</div><!--end carousel-caption-->
+				</div><!--end item active-->
+
+
+
+			</div><!--end carousel-inner-->
+
+			<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+			<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+		</div><!--end carousel-slide-->
+
+		<div class="row" id="bigCallout">
+			<div class="col-12">
+				<div class="alert alert-success alert-block fade in" id="successAlert">
+					<button type="button" class="close" data-dismiss="alert" id="successAlert">&times;</button>
+					<h4>Success</h4>
+					<p>Thankyou for your Subscription</p>
+				</div><!--end alert-->
+
+
+				<div class="well well-small visible-sm">
+					<a href="#" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span>Call us 24x7</a>
+				</div><!--end carousel-well-->
+				<div class="well">
+					<div class="page-header">
+						<h1>READ NOW!!!<small>valid for 24hrs only</small></h1>
+					</div><!--end page-header-->
+					<p class="lead">EASY LEARNING</p>
+					<a href="" class="btn btn-large btn-primary" id="alertMe">Subscribe Me</a>
+					<a href="#myModal" role="button" class="btn btn-large btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Register Here!</a>
+						<div class="modal fade" id="myModal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button class="close" data-dismiss="modal">&times;</button>
+												
+												<h4 class="modal-title">A Modal Window</h4>
+											</div><!-- end modal-header -->
+											<div class="modal-body">
+												<h1>Registration Form</h1>
+												<form class="form-horizontal">
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputName">Name</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputName" placeholder="Name" type="text">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputMessage">Mobile Number</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputNumber" placeholder="Mobile No" >
+															<button class="btn btn-success pull-right" type="submit">Submit</button>
+															<button class="btn btn-default pull-left" data-dismiss="modal" type="button">Close</button>
+														</div>
+													</div>
+												</form>
+											</div><!-- end modal-body -->
+											
+										</div><!-- end modal-content -->
+									</div><!-- end modal-dialog -->
+								</div><!-- end myModal -->
+				</div><!--end well-->
+			</div><!--end col-12-->
+		</div><!--end row -->
+
+
+			<div class="row" id="moreInfo">
+				<div class="col-sm-6">
+					<h1>TOP NEWS</h1>
+					<div class="tabbale">
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<a href="#tab1" data-toggle="tab">section1</a>
+							</li>
+							<li><a href="#tab2" data-toggle="tab">section2</a>
+
+							</li>
+						</ul><!--end nav nav-tabs-->
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<h2>NASA MAY UPEND SPACE TRAVEL WITH EXPERIMENTAL RESEARCH</h2>
+								<small>BY MASON PECK </small></h4>
+
+								<iframe src="https://www.youtube.com/embed/TPom17R9_3w" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+
+								<p> NASA's Sonny White and his collaborators have published experimental confirmation that the so-called EM drive produces thrust. If this technology fulfills its promise, it will transform public and private space exploration and may have even broader implications for terrestrial power and energy.</p>
+
+								<p>Their paper explains why this work is important with typically understated academic language: "For missions with very large delta-v requirements, having a propellant consumption rate of zero could offset the higher power requirements." Let me say it another way for everyone else: wouldn't it be great to travel in space as fast as you want without even using fuel?</p>
+
+								<p>The what-ifs that these questions inspire in us are why we find technology at the edge of science fiction so appealing. I suspect that they also inspire the engineers at Eagleworks. Narratives about our future break us free from the tyranny of everyday life and give us permission to imagine a better future for ourselves and the world, if only briefly. That's part of the appeal of Star Trek and other optimistic takes on the future. It's little wonder that White's advanced propulsion research provided the real-world basis for the spacecraft in the current Star Trek reboot.</p>
+							</div><!--end tab-pane-->
+
+
+							<div class="tab-pane" id="tab2">
+								<h4>section2</h4>
+								<img src="images/section2.jpg" class="thumbnail pull-left">
+								<p>This paper is not classified. It is in the public domain. This knowledge is for everyone, thanks to the democratic principles on which our nation was founded and that continue to enable the U.S. to lead the world in research in science and technology. And they make NASA the extraordinary agency it is. Public funding is central to any effort like space exploration. We have to pull togetherâ€”yes, pay our taxesâ€”to support work where there's no short-term profit to be had and yet so much long-term benefit to be realized.
+								</p>
+								<p>We want a NASA that pushes the limits, rejects staid ideas, and is immune from cynical pork-barrel politics. That's not always what we get, but more often than not, NASA's technology innovations change the game. If a warp drive or anything else from the world of science fiction ever becomes real, it will likely be thanks to NASA-sponsored research.</p>
+
+
+								<a href="http://www.newsweek.com/nasa-em-drive-space-exploration-525147" role="button" class="btn btn-warning" data-toggle="modal">Click To Know More</a>
+
+
+							</div><!--end tab-pane-->
+						</div><!--end tab-content-->
+
+					</div><!--end tabble-->
+				</div><!--end col-sm-6-->
+
+
+				<div class="col-sm-6">
+
+					<h3 >WHEN WILL AMERICANS GET TO EXPERIENCE CUBAN CULTURE?
+					</h3>  		<a href="http://www.newsweek.com/cuba-exhibit-american-museum-natural-history-524186">
+					<p>Sanctions and travel restrictions were eased. Both Obama and Raul Castro, who assumed control of the country after his brother Fidel stepped down in 2008, expressed a willingness to cultivate a dialogue between the two nations.</p>
+
+					<h4></h4>
+					<div class="list-group">
+						<a href="http://www.newsweek.com/egypt-unearths-7000-year-old-city-524785?rel=most_read4" class="list-group-item">
+							<h4 class="list-group-item-heading">EGYPT: ARCHAEOLOGISTS DISCOVER 7,000-YEAR-OLD CITY</h4>
+							<p>
+								The discovery was made by a mission associated with the Egyptian Ministry of Antiquities just 400 meters away from the temple </p>
+							</a>
+
+							<a href="http://www.newsweek.com/assemble-remaking-englands-homes-art-world-525394" class="list-group-item">
+								<h4 class="list-group-item-heading">DESIGN COLLECTIVE ASSEMBLE IS REMAKING ENGLAND'S HOMES</h4>
+								<p>
+									Until recently, 35 Cairns Street was just another boarded-up house, one in a row of abandoned, two-up, two-down Victorian terraces in a rundown part of Liverpool,</p>
+								</a>
+
+
+								<a href="http://www.newsweek.com/existing-home-sales-october-2016-524045" class="list-group-item">
+									<h4 class="list-group-item-heading">U.S. HOME RESALES HIT NINE YEAR HIGH IN OCTOBER
+									</h4>
+									<p>U.S. home resales rose in October to their highest level in more than 9-1/2 years amid pent-up demand, offering more evidence of a pickup in economic growth early in the fourth quarter.</p>
+								</a>
+								</div><!--end list-group-->
+							<h4>QUORA QUESTION: DOES FACEBOOK HAVE AN INCENTIVE TO CURB 'FAKE NEWS?'
+							</h4>
+							<p>
+								Did Facebook's "fake news stories" have a large influence on the outcome of the 2016 presidential election? The only people who have the right answer to this question work at Facebook and won't tell us this in a public sphere. Its arguable if even they can pull up a definitive answer.
+
+							</p>
+
+						</div><!--end col-6-->
+						<div class="row" id="featuresHeading">
+			<div class="col-12">
+				<h2>More News</h2>
+			</div><!--end col-12 -->
+		</div>	<!--end row-->
+		<div class="row" id="features">
+			<div class="col-sm-4 feature">	
+				<div class="panel">
+					<div class="panel-heading">
+						<h1 class="panel-title">Business
+						</h1>	
+					</div>	<!--end panel heading-->
+					<img src="images/col1.jpg" class="img-circle">
+					<h3>Property Registrations In Maharashtra Drop</h3>
+					<p>The Maharashtra government's revenue collection has been hit hard by the cash crunch. Receipts have declined 53.3 percent on month basis.</p>
+					<a href="http://www.bloombergquint.com/business/2016/11/25/property-registrations-in-maharashtra-drop-nearly-40-since-november-9" target="_blank" class="btn btn-warning btn-block">ReadMore</a>
+				</div><!--end panel-heading-->
+			</div><!--end col-4-->
+
+
+
+			<div class="col-sm-4 feature">	
+				<div class="panel">
+					<div class="panel-heading">
+						<h1 class="panel-title">Health</h1>	
+					</div>	
+					<img src="images/col2.jpg" class="img-circle">
+					<h3>Low social status 'can damage immune system'</h3>
+					<p>Simply being at the bottom of the social heap directly alters the body in ways that can damage health, a study at Duke University in the US suggests.</p>
+					<a href="http://www.bbc.com/news/health-38092146" target="_blank" class="btn btn-warning btn-block">ReadMore</a></div><!--end panel-heading-->
+				</div><!--end col-4-->
+
+
+
+				<div class="col-sm-4 feature">	
+					<div class="panel">
+						<div class="panel-heading">
+							<h1 class="panel-title">Sports</h1>	
+						</div>	
+						<img src="images/col3.jpg" class="img-circle">
+						<h3>Real Madrid: Massive injury blow confirmed ahead of barcelona clash</h3>
+						<p>Real Madrid has confirmed that Gareth Bale will undergo ankle surgery next week, causing him to miss the first.</p>
+						<a href="http://www.newsweek.com/sport-real-madrid-barcelona-524876" target="_blank" class="btn btn-warning btn-block">ReadMore</a>
+					</div><!--end panel-heading-->
+				</div><!--end col-4-->
+			</div><!--end row-->
+		
+
+						<div class="row" id="moreInfo">
+							<div class="col-12">
+								<h4>Some Of Articles</h4>
+								<div class="thumbnail row">
+									<div class="col-6">
+										<div class="thumbnail">
+											<img src="images/buy1.jpg">
+											<div class="label label-primary price"><span class="glyphicon glyphicon-tag"><sup>$</sup>100</span></div>
+											<div class="caption">
+												<p><a href="#" class="btn btn-primary btn-small" target="_blank">BUY NOW</a></p>
+											</div><!--end caption-->
+										</div><!--end label-primary price-->
+
+									</div><!--end thumbnails-->
+
+									<div class="col-6">
+										<div class="thumbnail">
+											<img src="images/buy2.jpg">
+											<div class="label label-success price"><span class="glyphicon glyphicon-tag"><sup>Free</span>
+
+											</div><!--end label-success price-->
+											<div class="caption">
+												<p><a href="#" class="btn btn-primary btn-small" target="_blank">CLICK ME</a></p>
+											</div><!--end caption-->
+										</div><!--end thumbnails-->
+
+									</div><!--end col-6-->
+
+
+
+								</div><!--end row-->
+							</div><!--end col-12-->
+						</div><!--end form-group-->
+
+</div>
+</div>
+
+						<hr>
+						<footer>
+							<div class="container">
+							<div class="row">
+								<h1>News Services</h1>
+
+								<div class="col-sm-3">
+
+									<a href="http://www.bbc.com/news/10628994"><span class="glyphicon glyphicon-iphone">On Your Mobile</span></a>
+								</div><!--end col-sm-3-->
+
+								<div class="col-sm-3">
+
+									<a href="http://www.bbc.com/news/help-17655000"><span class="glyphicon glyphicon-tv">On Your Connected Tv</span></a>
+								</div><!--end col-sm-3-->
+
+								<div class="col-sm-3">
+
+									<a href="http://www.bbc.com/news/10628323"><span class="glyphicon glyphicon-message-in">Get New Alerts</span></a>
+								</div><!--end col-sm-3-->
+
+
+								<div class="col-sm-3">
+
+									<a href="http://www.bbc.com/news/20039682"><span class="glyphicon glyphicon-group">Contact News</span></a>
+								</div><!--end col-sm-3-->
+							</div><!--end row-->
+
+
+							<hr>
+							<div class="row">
+								<div class="col-sm-2"><h6>Copyrights &copy; Muthu</h6></div>
+								<div class="col-sm-4">
+									<h6>About us</h6>
+									<p>Newsweek is a premier news magazine and website that has been bringing high-quality journalism to readers around the globe for over 80 years.
+
+									</p>
+								</div><!--end col-sm-4-->
+								<div class="col-sm-2">
+									<h6>Navigation</h6>
+									<ul class="unstyle">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="http://www.newsweek.com/privacy-policy">Privacy Policies</a></li>
+										<li><a href="http://www.newsweek.com/terms-service">Terms of Services</a></li>
+										<li><a href="#">Contact</a></li>
+										<li><a href="#">Links</a></li>
+									</ul><!--end unstyle-->
+								</div><!--end col-sm-2-->
+								<div class="col-sm-2">
+									<h6>To Know Updates</h6>
+									<ul class="unstyle">
+										<li><a href="http:www.facebook.com">Facebook</a></li>
+										<li><a href="http:www.twitter.com">Twitter</a></li>
+										<li><a href="http:www.youtube.com">Youtube</a></li>
+										<li><a href="http:www.googleplus.com">Google+</a></li>
+									</ul><!--end unstyle-->
+								</div><!--end col-sm-2-->
+							</div><!--end row-->
+						</div><!--end container-->
+
+
+					</footer>
+
+
+
+
+
+					<script src="http://code.jquery.com/jquery.js"></script>
+
+					<!-- If no online access, fallback to our hardcoded version of jQuery -->
+					<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+					<!-- Bootstrap JS -->
+					<script src="bootstrap/js/bootstrap.min.js"></script>
+
+					<!-- Custom JS -->
+					<script src="includes/js/script.js"></script>
+
+				</body>
+				</html>
+
